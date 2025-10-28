@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ONNXBayes/1.0.0": {
+        "runtime": {
+          "ONNXBayes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ONNXBayes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

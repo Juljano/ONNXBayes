@@ -1,0 +1,14 @@
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\bin\Debug\net9.0\ONNXBayes.exe
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\bin\Debug\net9.0\ONNXBayes.deps.json
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\bin\Debug\net9.0\ONNXBayes.runtimeconfig.json
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\bin\Debug\net9.0\ONNXBayes.dll
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\bin\Debug\net9.0\ONNXBayes.pdb
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.AssemblyInfoInputs.cache
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.AssemblyInfo.cs
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.csproj.CoreCompileInputs.cache
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.dll
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\refint\ONNXBayes.dll
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.pdb
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ONNXBayes.genruntimeconfig.cache
+C:\Users\JML\KI - Projekte\ONNXBayes\ONNXBayes\obj\Debug\net9.0\ref\ONNXBayes.dll
