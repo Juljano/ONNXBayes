@@ -40,19 +40,20 @@ namespace ONNXBayes
 
             foreach (var prediction in labelTensor)
             {
-                if (prediction.Equals("spam"))
+                
+                switch (prediction)
                 {
-                    Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist Spam - Bitte diese Nachricht löschen");
+                    case "spam": 
+                        Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist Spam - Bitte diese Nachricht löschen");
+                        break;
+                    case "ham":
+                        Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist kein Spam - Du kannst die Nachricht behalten");
+                        break;
+                    default:
+                        Console.WriteLine("Diese Nachricht kann nicht eingeschätzt werden");
+                        break;
                 }
-                else if (prediction.Equals("ham"))
-                {
-                    Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist kein Spam - Du kannst die Nachricht behalten");
-                }
-                else
-                {
-                    Console.WriteLine("Diese Nachricht kann nicht eingeschätzt werden");
-                }
-
+               
             }
         }
     }
