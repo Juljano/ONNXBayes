@@ -6,3 +6,6 @@ Das Ziel ist, Python-ML-Modelle plattformübergreifend nutzbar zu machen, sodass
 
 Für dieses Beispiel wurde das ML-Modell aus meinem vorherigen Projekt verwendet: [Spamfilter-Naive-Bayes](https://github.com/Juljano/Spamfilter-Naive-Bayes)
 
+**ML-Modell läuft mit ONNX in ein C#-Programm**
+
+![Result](images/Result.png)
