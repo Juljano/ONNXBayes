@@ -7,4 +7,18 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.23.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Model\Naive-Bayes-Model.onnx">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Model\Naive-Bayes-Model.onnx" />
+      <Content Include="Model\Naive-Bayes-Model.onnx">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

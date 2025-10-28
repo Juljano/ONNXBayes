@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ij0bxUnQoG0=",
+  "dgSpecHash": "3IWTTJUqZKs=",
   "success": true,
   "projectFilePath": "C:\\Users\\JML\\KI - Projekte\\ONNXBayes\\ONNXBayes\\ONNXBayes.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\JML\\.nuget\\packages\\microsoft.ml.onnxruntime\\1.23.2\\microsoft.ml.onnxruntime.1.23.2.nupkg.sha512",
+    "C:\\Users\\JML\\.nuget\\packages\\microsoft.ml.onnxruntime.managed\\1.23.2\\microsoft.ml.onnxruntime.managed.1.23.2.nupkg.sha512",
+    "C:\\Users\\JML\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\JML\\.nuget\\packages\\system.numerics.tensors\\9.0.0\\system.numerics.tensors.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
