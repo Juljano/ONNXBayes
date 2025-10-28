@@ -24,36 +24,42 @@ namespace ONNXBayes
         {
             using var session = new InferenceSession(_modelPath);
 
-            Console.WriteLine("Please enter a message to rate:");
-            string[] message = {Console.ReadLine()};
-            Console.WriteLine($"Your Message: {message[0]}");
-
-            var inputTensor = new DenseTensor<string>(message, new int[] { message.Length, 1 });
-            var inputs = new List<NamedOnnxValue>
+            while (true)
             {
-                NamedOnnxValue.CreateFromTensor("input", inputTensor)
-            };
 
-            using var results = session.Run(inputs);
+                Console.WriteLine("Please enter a message to rate:");
+                string[] message = { Console.ReadLine() };
+                Console.WriteLine($"Your Message: {message[0]}");
 
-            var labelTensor = results.First(r => r.Name == "output_label").AsTensor<string>();
-
-            foreach (var prediction in labelTensor)
-            {
-                
-                switch (prediction)
+                var inputTensor = new DenseTensor<string>(message, new int[] { message.Length, 1 });
+                var inputs = new List<NamedOnnxValue>
                 {
-                    case "spam": 
-                        Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist Spam - Bitte diese Nachricht löschen");
-                        break;
-                    case "ham":
-                        Console.WriteLine($"Prediction: {prediction} - Diese Nachricht ist kein Spam - Du kannst die Nachricht behalten");
-                        break;
-                    default:
-                        Console.WriteLine("Diese Nachricht kann nicht eingeschätzt werden");
-                        break;
+                    NamedOnnxValue.CreateFromTensor("input",
+                        inputTensor) // Using the argument name from the ONNX export in the Python script
+                };
+
+                using var results = session.Run(inputs);
+
+                var labelTensor = results.First(r => r.Name == "output_label").AsTensor<string>();
+
+                foreach (var prediction in labelTensor)
+                {
+                    switch (prediction)
+                    {
+                        case "spam":
+                            Console.WriteLine(
+                                $"Prediction: {prediction} - Diese Nachricht ist Spam - Bitte diese Nachricht löschen");
+                            break;
+                        case "ham":
+                            Console.WriteLine(
+                                $"Prediction: {prediction} - Diese Nachricht ist kein Spam - Du kannst die Nachricht behalten");
+                            break;
+                        default:
+                            Console.WriteLine("Diese Nachricht kann nicht eingeschätzt werden");
+                            break;
+                    }
+
                 }
-               
             }
         }
     }

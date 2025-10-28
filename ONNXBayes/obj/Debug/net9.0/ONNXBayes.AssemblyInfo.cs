@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ONNXBayes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+888656cea5659308190da5d77762931ed590a4f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0a2a50e5ba3717e7fc9c31bea0a7e5921bdafce")]
 [assembly: System.Reflection.AssemblyProductAttribute("ONNXBayes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ONNXBayes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
